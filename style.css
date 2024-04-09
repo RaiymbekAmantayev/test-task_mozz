@@ -1,0 +1,179 @@
+/* -------------------common---------------------  */
+
+body {
+    margin: 0;
+    font-family: Raleway, sans-serif;
+    color: darkblue
+}
+
+.navigation {
+    padding: 15px 0;
+    /* border: 1px solid black; */
+    background-color: black;
+}
+
+.navigation ul {
+    width: 50%;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.main {
+    font-weight: bold;
+    color: black;
+}
+
+.navigation ul a {
+    text-decoration: none;
+    padding-bottom: 5px;
+    color: aliceblue;
+    font-weight: bold;
+}
+
+.navigation ul a:hover {
+    text-decoration: none;
+    /* border-bottom: 1px solid black; */
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    border: none;
+}
+
+.navigation>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* -------------------padding---------------------  */
+
+.banner {
+    /* border: 2px solid black; */
+    height: 600px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(main.jpg);
+    background-size: 100% 100%;
+    margin: 0;
+}
+
+
+.new-arrivals {
+    background-color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.new-arrivals h2 {
+    margin-top: 0;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    max-width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-info {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-title {
+    margin-top: 0;
+}
+
+.card-price {
+    margin-bottom: 0;
+}
+
+.show-more {
+    display: block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+/* -------------------gallery-------------------- */
+
+.gallery h2 {
+    text-align: center;
+    padding: 15px 0 0px;
+}
+
+.gallery>.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.gallery>.container>div {
+    width: 30%;
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons>a {
+    width: 69px;
+    margin-right: 10px;
+}
+
+.buttons>a>button {
+    width: 69px;
+}
+
+.gallery img {
+    width: 80%;
+    border-radius: 10%;
+}
+
+.gallery p {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.black-link {
+    color: black;
+    text-decoration: none; /* Опционально: убирает подчеркивание у ссылки */
+}
+/* -------------------team-------------------- */
